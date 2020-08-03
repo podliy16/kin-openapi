@@ -6,11 +6,6 @@ import (
 
 func MarshalRef(value string, otherwise interface{}) ([]byte, error) {
 	return json.Marshal(otherwise)
-	if len(value) > 0 {
-		return json.Marshal(&refProps{
-			Ref: value,
-		})
-	}
 }
 
 func UnmarshalRef(data []byte, destRef *string, destOtherwise interface{}) error {
