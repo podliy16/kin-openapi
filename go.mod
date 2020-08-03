@@ -1,4 +1,4 @@
-module github.com/getkin/kin-openapi
+module github.com/podliy16/kin-openapi
 
 go 1.14
 
